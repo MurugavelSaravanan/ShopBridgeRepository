@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace ShopBridge.Backend.WebAPI.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     public class ItemDetailsController : ControllerBase
     {
         private IService service;
@@ -21,6 +21,7 @@ namespace ShopBridge.Backend.WebAPI.Controllers
         string responseMessage;
 
         //To get all the items
+        [Route("[action]")]
         [HttpGet]
         public async Task<IActionResult> GetAllItems()
         {
@@ -37,6 +38,7 @@ namespace ShopBridge.Backend.WebAPI.Controllers
         }
 
         //To Add an item
+        [Route("[action]")]
         [HttpPost]
         public async Task<IActionResult> AddItem([FromBody] ItemDetails inputData)
         {
@@ -63,6 +65,7 @@ namespace ShopBridge.Backend.WebAPI.Controllers
         }
 
         //To update an item
+        [Route("[action]")]
         [HttpPut]
         public async Task<IActionResult> UpdateItem([FromBody] ItemDetails inputData)
         {
@@ -89,7 +92,8 @@ namespace ShopBridge.Backend.WebAPI.Controllers
         }
 
         //To delete an item
-        [HttpDelete("{id}")]
+        [Route("[action]/{id}")]
+        [HttpDelete]
         public async Task<IActionResult> DeleteItem(int id)
         {
             try

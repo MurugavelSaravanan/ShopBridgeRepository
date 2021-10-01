@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="Abp" Version="6.5.0" />
+    <PackageReference Include="Refit" Version="6.0.94" />
     <PackageReference Include="ServiceStack.Interfaces" Version="5.12.0" />
   </ItemGroup>
 
