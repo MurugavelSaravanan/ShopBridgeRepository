@@ -28,7 +28,7 @@ namespace ShopBridge.Backend.API.AzureFunctions
             string responseMessage;
             try
             {
-                responseMessage = service.DeleteItem(id);
+                responseMessage =await service.DeleteItem(id);
             }
             catch (Exception exception)
             {

@@ -42,7 +42,7 @@ namespace ShopBridge.Backend.API.AzureFunctions
             }
             try
             {
-                responseMessage=service.UpdateItem(inputData);
+                responseMessage=await service.UpdateItem(inputData);
             }
             catch (Exception exception)
             {

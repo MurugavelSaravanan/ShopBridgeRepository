@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge.Backend.API", "ShopBridge.Backend.API\ShopBridge.Backend.API.csproj", "{857B0D04-53E7-4044-8202-84334D7E909D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBridge.Backend.API", "ShopBridge.Backend.API\ShopBridge.Backend.API.csproj", "{857B0D04-53E7-4044-8202-84334D7E909D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge.Backend.Data", "ShopBridge.Backend.Data\ShopBridge.Backend.Data.csproj", "{5ED95028-B9AC-421C-A013-6884BDA54447}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBridge.Backend.Data", "ShopBridge.Backend.Data\ShopBridge.Backend.Data.csproj", "{5ED95028-B9AC-421C-A013-6884BDA54447}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge.Data", "ShopBridge.Data\ShopBridge.Data.csproj", "{38C73C8B-8FD1-439C-AFF4-70DF46A2C86D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBridge.Data", "ShopBridge.Data\ShopBridge.Data.csproj", "{38C73C8B-8FD1-439C-AFF4-70DF46A2C86D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge.Backend.Test", "ShopBridge.Backend.Test\ShopBridge.Backend.Test.csproj", "{9437197B-6450-4A5E-BECE-93C0CCD33908}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShopBridge.Backend.Test", "ShopBridge.Backend.Test\ShopBridge.Backend.Test.csproj", "{9437197B-6450-4A5E-BECE-93C0CCD33908}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopBridge.Backend.WebAPI", "ShopBridge.Backend.WebAPI\ShopBridge.Backend.WebAPI.csproj", "{BC0CCE21-8DF7-4A36-9419-5406044CAE22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{9437197B-6450-4A5E-BECE-93C0CCD33908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9437197B-6450-4A5E-BECE-93C0CCD33908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9437197B-6450-4A5E-BECE-93C0CCD33908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC0CCE21-8DF7-4A36-9419-5406044CAE22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC0CCE21-8DF7-4A36-9419-5406044CAE22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC0CCE21-8DF7-4A36-9419-5406044CAE22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC0CCE21-8DF7-4A36-9419-5406044CAE22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

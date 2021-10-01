@@ -3,10 +3,9 @@ using ShopBridge.Data.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
-namespace ShopBridge.Backend.API.Services
+namespace ShopBridge.Backend.WebAPI.Services
 {
     public class Service : IService
     {
@@ -28,10 +27,10 @@ namespace ShopBridge.Backend.API.Services
         {
             try
             {
-                await itemDetailsRepository .Insert(itemDetails);
+                await itemDetailsRepository.Insert(itemDetails);
                 message = "Item Added Successfully";
             }
-            catch(Exception exception)
+            catch (Exception exception)
             {
                 return exception.InnerException.Message;
             }
@@ -43,7 +42,7 @@ namespace ShopBridge.Backend.API.Services
         {
             try
             {
-                await itemDetailsRepository .Update(itemDetails);
+                await itemDetailsRepository.Update(itemDetails);
                 message = "Item Updated Successfully";
             }
             catch (Exception exception)
@@ -58,7 +57,7 @@ namespace ShopBridge.Backend.API.Services
         {
             try
             {
-                await itemDetailsRepository .Delete(id);
+                await itemDetailsRepository.Delete(id);
                 message = "Item Deleted Successfully";
             }
             catch (Exception exception)

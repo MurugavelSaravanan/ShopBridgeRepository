@@ -41,7 +41,8 @@ namespace ShopBridge.Backend.Data.Repositories
         public virtual async Task Delete(object id)
         {
             T entityToDelete = context.Set<T>().Find(id);
-            await Delete(entityToDelete);
+            context.Entry(entityToDelete).State = EntityState.Deleted;
+            await Save();
         }
     }
 }
