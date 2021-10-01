@@ -89,7 +89,7 @@ namespace ShopBridge.Backend.WebAPI.Controllers
         }
 
         //To delete an item
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteItem(int id)
         {
             try
